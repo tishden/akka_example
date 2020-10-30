@@ -2,11 +2,11 @@
 <Configuration strict="true" status="INFO" xmlns="http://logging.apache.org/log4j/2.0/config">
     <Appenders>
         <Console name="console" target="SYSTEM_OUT">
-            <PatternLayout pattern="[TEST]"/>
+            <PatternLayout pattern="[AKKA-TEST] %d{MMM d HH:mm:ss.SSS}{UTC} [%p] - %m %c [%t]%n"/>
         </Console>
     </Appenders>
     <Loggers>
-        <AsyncRoot level="info">
+        <AsyncRoot level="info" includeLocation="false" additivity="false">
             <AppenderRef ref="console"/>
         </AsyncRoot>
     </Loggers>
