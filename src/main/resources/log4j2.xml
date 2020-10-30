@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration strict="true" status="INFO" xmlns="http://logging.apache.org/log4j/2.0/config">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[TEST]"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <AsyncRoot level="info">
+            <AppenderRef ref="console"/>
+        </AsyncRoot>
+    </Loggers>
+</Configuration>
